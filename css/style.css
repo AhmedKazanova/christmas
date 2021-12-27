@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 10 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
 * {
   font-family: 'Nunito', sans-serif;
@@ -9,6 +16,7 @@
   border: none;
   text-decoration: none;
   -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear;
 }
 html {
@@ -77,11 +85,13 @@ section {
           justify-content: space-between;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
   -webkit-transform: translateY(-20rem);
-          transform: translateY(-20rem);
+          -ms-transform: translateY(-20rem);
+      transform: translateY(-20rem);
 }
 .header.active {
   -webkit-transform: translateY(0rem);
-          transform: translateY(0rem);
+          -ms-transform: translateY(0rem);
+      transform: translateY(0rem);
 }
 .header .logo {
   font-size: 2.5rem;
@@ -190,7 +200,8 @@ section {
   top: 20rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   width: 30vw;
   z-index: 1;
 }
@@ -212,7 +223,8 @@ section {
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   width: 100%;
   text-align: center;
   z-index: 3;
@@ -294,12 +306,14 @@ section {
 
 .products .box-container .box:hover .image img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+          -ms-transform: scale(1.1);
+      transform: scale(1.1);
 }
 
 .products .box-container .box:hover .image .icons {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+          -ms-transform: translateY(0);
+      transform: translateY(0);
 }
 
 .products .box-container .box .image {
@@ -330,7 +344,8 @@ section {
           justify-content: center;
   gap: .5rem;
   -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
 }
 
 .products .box-container .box .image .icons a {
@@ -398,7 +413,8 @@ section {
 
 .services .box-container .box:hover i {
   -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+          -ms-transform: translateY(-1rem);
+      transform: translateY(-1rem);
 }
 
 .services .box-container .box i {
@@ -428,7 +444,8 @@ section {
 /*******************************************************/
 .gallery .box-container {
   -webkit-columns: 25rem 3;
-          columns: 25rem 3;
+          -moz-columns: 25rem 3;
+       columns: 25rem 3;
   gap: 1.5rem;
 }
 
@@ -484,7 +501,8 @@ section {
 
 .blogs .box-container .box:hover .images img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+          -ms-transform: scale(1.1);
+      transform: scale(1.1);
 }
 
 .blogs .box-container .box .images {
@@ -688,4 +706,3 @@ section {
     font-size: 50%;
   }
 }
-/*# sourceMappingURL=style.css.map */
